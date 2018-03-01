@@ -1,0 +1,7 @@
+Creating generic repository:
+  a. Should include the ability to get by Id, get all table entries
+  b. Use getClass method to get the type of object we need to work with?
+  c. Repository classes may contain specific methods for type of entity, but
+  must inherit base repository class.
+  d. Base repository class just needs to return generic objects based off Id or
+  whole table (possibly other params).
