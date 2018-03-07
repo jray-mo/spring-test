@@ -9,7 +9,7 @@
         <module name="spring-test" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="1.8">
       <module name="spring-test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
