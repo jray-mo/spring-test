@@ -1,14 +1,19 @@
 package restapi.test;
 
+import connection.pojos.Widget;
+import java.util.ArrayList;
+import java.util.List;
+
 public class Test
 {
     private final long id;
-    private final String content;
+    private final ArrayList<Widget> content;
 
-    public Test(long id, String content)
+    public Test(long id, List<Widget> content)
     {
         this.id = id;
-        this.content = content;
+        this.content = new ArrayList<>();
+                this.content.addAll(content);
     }
 
     public long getId()
@@ -16,7 +21,7 @@ public class Test
         return id;
     }
 
-    public String getContent()
+    public ArrayList<Widget> getContent()
     {
         return content;
     }
